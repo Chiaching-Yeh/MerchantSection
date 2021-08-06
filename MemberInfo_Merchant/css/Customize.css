@@ -142,7 +142,7 @@ body {
     font-size: 18px !important;
 }
 
-#couriorinfo label {
+#Merchantinfo label {
     display: inline-block;
     width: 140px;
     text-align: right !important;
@@ -153,11 +153,11 @@ body {
     font-size: 18px !important;
 }
 
-#couriorinfo input {
+#Merchantinfo input {
     display: inline-block;
 }
 
-.submitBtnInCouriorinfo input {
+.submitBtnInMerchantinfo input {
     width: 150px !important;
     padding: 20px;
     font-size: 18px;
@@ -170,11 +170,11 @@ body {
     margin-bottom: 20px;
 }
 
-.submitBtnInCouriorinfo input:hover {
+.submitBtnInMerchantinfo input:hover {
     background-color: #d3835e !important;
 }
 
-.submitBtnInCouriorinfo input:active {
+.submitBtnInMerchantinfo input:active {
     transform: translateY(4px) !important;
 }
 
