@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MassFood! 廠商登入註冊</title>
+
+    <!-- google Noto Sans TC 字型 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <!-- 載入Bootstrap CSS -->
+    <link href="./vendors/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 載入Bootstrap相關JS -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- navBar相關 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- 載入Css -->
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- 載入js -->
+    <script src="./js/index.js"></script>
+
+    <!-- 載入多選清單 -->
+    <link href="./vendors/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
+    <link href="./vendors/css/example-styles.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <!-- 使用Boostrap Navbar -->
+    <!-- navbar-expand-lg在960px以下就出現漢堡式選單 -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow p-3 mb-5 bg-body rounded"
+        style="background-color: #ffffff;">
+
+        <!-- 導覽列左上角的文字 -->
+        <a class="navbar-brand" href="#">
+            <p>MassFood!</p>
+        </a>
+
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 導覽列裡的連結 -->
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">美食地圖</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">廠商專區</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">消費者專區</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">外送員專區</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="a">
+                <div class="col-lg-5.8">
+                    <div class="ReFormOutline">
+                        <p>註冊</p>
+                        <form class="ReForm" action="#">
+
+                            <label for="Name" class="form-label">餐廳名稱：</label>
+                            <input class="form-control" type="text" placeholder="Default input"
+                                aria-label=".form-control-sm example"><br>
+
+                            <div class="AddressSection">
+                                <label for="Name" class="form-label" id="restaurantName">餐廳地址：</label>
+                                <ul class="AddressInputSelect">
+                                    <div class="zipCityAdminArea">
+                                        <li>
+                                            <input class="form-control" type="text" placeholder="郵遞區號"
+                                                aria-label=".form-control-sm example" id="zipcode" name="ZipCode">
+                                        </li>
+
+                                        <li>
+                                            <select class="form-select form-select-sm"
+                                                aria-label=".form-select-sm example" id="City">
+                                                <option selected>城市</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </li>
+
+                                        <li>
+                                            <select class="form-select form-select-sm"
+                                                aria-label=".form-select-sm example" id="AdminArea">
+                                                <option selected>行政區</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </li>
+                                    </div>
+
+                                    <div class="restAddress">
+                                        <li>
+                                            <input class="form-control" type="text" placeholder="Default input"
+                                                aria-label=".form-control-sm example" id="Address">
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+
+                            <label for="Name" class="form-label">統一編號：</label>
+                            <input class="form-control" type="text" placeholder="Default input"
+                                aria-label=".form-control-sm example" name="IdentityNumber"><br>
+
+                            <label for="Name" class="form-label">聯絡人姓名：</label>
+                            <input class="form-control" type="text" placeholder="Default input"
+                                aria-label=".form-control-sm example" name="ContactPersonName"><br>
+
+                            <label for="Email" class="form-label">電子郵件：</label>
+                            <input type="email" class="form-control" id="Email" name="ContactPersonIdentityNumber"
+                                placeholder="name@example.com">
+
+                            <label for="Password" class="form-label">密碼：</label>
+                            <input type="password" class="form-control" id="Password" name="Password">
+
+                            <label for="passwordAgain" class="form-label">請再輸入密碼：</label>
+                            <input type="password" class="form-control" name="passwordAgain" id="passwordAgain">
+
+                            <label for="IdentityNumber" class="form-label">身分證字號：</label>
+                            <input class="form-control" type="text" placeholder="Default input"
+                                aria-label="default input example" id="IdentityNumber" name="ContactPersonIdentityNumber" pattern="">
+
+                            <div class="BankCodeSection">
+                                <label for="CredCardNumber">銀行代號：</label>
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example"
+                                    id="BankCode" name="BankCode">
+                                    <option selected>-- Select --</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="BankAccountdNumber">
+                                <label for="CredCardNumber">銀行帳號：</label>
+                                <input type="text" class="form-control" placeholder="CardNum"
+                                    aria-label="default input example" id="ccFormatMonitor" maxlength='19'
+                                    name="BankAccount">
+                            </div>
+
+
+                            <label for="BankAccountName">戶名：</label>
+                            <input class="form-control" type="text" placeholder="Default input"
+                                aria-label="default input example" id="BankAccountName" name="BankAccountName">
+
+                            <div class="formItem">
+                                <div class="ResetBtnInReForm">
+                                    <input type="reset" class="ResetBtn" value="資料重填">
+                                </div>
+                                <div class="submitBtnInReForm">
+                                    <input type="submit" class="submitBtn" value="送出資料">
+                                </div>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                </div>
+
+                <!-- 中間分隔 -->
+                <div class="col-lg-0.4" style="border: white solid; width: 20px; "></div>
+
+                <div class="col-lg-5.8">
+                    <div class="LoginBtnOutline">
+                        <div class="LoginBtn">
+                            <input type="submit" class="login" value="登入">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 登入表單+註冊按鈕 -->
+        <div class="row">
+            <div class="b -none">
+
+                <div class="col-lg-5.8">
+                    <div class="LoginFormOutline">
+                        <p>登入</p>
+                        <form action="#" class="LoginForm">
+
+                            <label for="Email" class="form-label">電子郵件：</label>
+                            <input type="email" class="form-control" id="LoginEmail" name="LoginEmail"
+                                placeholder="name@example.com"><br><br>
+
+                            <label for="password">密碼：</label>
+                            <input type="password" class="form-control" id="LoginPassword" name="LoginPassword"><br><br>
+
+
+                            <input type="checkbox" value="remPwd" class="remPwd"><span>記住我的帳號密碼</span>
+
+                            <div class=submitAndforgetPwdBtn>
+                                <span class="submitBtn">
+                                    <input type="submit" value="送出資料">
+                                </span>
+                                <span class="forgetPwdBtn">
+                                    <input type="submit" value="忘記密碼">
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- 中間分隔 -->
+                <div class="col-lg-0.4" style="border: white solid; width: 20px; "></div>
+
+                <div class="col-lg-5.8">
+
+                    <div class="RebtnOutline">
+                        <div class="welcomeText">
+                            <p>
+                                還不是商家嗎？
+                                <br>快來填寫註冊表單
+                                <br>加入商家會員吧！
+                            </p>
+                        </div>
+                        <div class="ReBtn">
+                            <input type="submit" class="register" value="註冊">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="contact">
+            <a href="#">聯絡客服</a>
+        </div>
+        <div class="Copyright">
+            <p class="Copyrighttext">&copy; All Rights Reserved 版權所有 不得轉載</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="./vendors/js/jquery.multi-select.js"></script>
+    <script src="./vendors/js/jquery.multi-select.min.js"></script>
+    <script src="./vendors/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

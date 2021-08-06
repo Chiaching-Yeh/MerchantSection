@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* 覆寫styles.css的body */
+
+body {
+    margin: 0 !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+}
+
+/* 覆寫styles.css的form-control*/
+
+.form-control {
+    width:250px;
+    height: calc(1.5em + 1rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3B3B3B;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e3e6ec;
+    border-radius: 0.35rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#nav-link {
+    font-size: 1.15rem;
+}
+
+#contactService {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+
+#contactService {
+    display: block;
+    text-align: center;
+}
+
+#contactService {
+    font-weight: bold;
+    margin: auto;
+    background-color: #DFDFDF;
+    color: #5B352C !important;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.pt-10, .py-10 {
+    padding-top: 1.5rem !important;
+}
+
+#main {
+    border: #3B3B3B solid 2px;
+    border-radius: 35px;
+}
+
+#AsideAndMain {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.page-header-title {
+    color: seashell;
+}
+
+.form-control:focus {
+    border-color: #5B352C;
+    box-shadow: inset 0 1px 1px #5B352C;
+}
+
+/*以下為sideBar*/
+
+.cart {
+    padding-left: 0px;
+    list-style: none;
+    margin: 20px auto;
+}
+
+.cart a {
+    text-decoration: none;
+    color: #3B3B3B;
+}
+
+.cart>li {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cart>li>a {
+    background-color: #5B352C;
+    border-radius: 30px;
+    color: #fff;
+    display: block;
+    padding: 5px;
+}
+
+.cart ul li {
+    list-style: none;
+    margin: 5px;
+}
+
+.cart>li>a:hover, .cart>li>a.active {
+    background-color: #DB7243;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.cart ul {
+    display: none;
+    padding-left: 0px;
+    background-color: #fff;
+}
+
+/* 以下為基本資料區 */
+
+#main .MainTitle {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #DB7243;
+}
+
+
+.infoItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 18px !important;
+}
+
+#couriorinfo label {
+    display: inline-block;
+    width: 140px;
+    text-align: right !important;
+
+    /* 調整多選選單結構 */
+    margin-bottom: 0rem !important; 
+
+    font-size: 18px !important;
+}
+
+#couriorinfo input {
+    display: inline-block;
+}
+
+.submitBtnInCouriorinfo input {
+    width: 150px !important;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color: #DB7243;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.submitBtnInCouriorinfo input:hover {
+    background-color: #d3835e !important;
+}
+
+.submitBtnInCouriorinfo input:active {
+    transform: translateY(4px) !important;
+}
+
+.BankCodeSection select{
+    width: 250px;
+    height:45px;
+    font-size: 18px;
+    border: 1px solid #ced4da;
+    overflow: scroll;
+    border-radius: 0.35rem;
+}
+
+.BankCodeSection select:focus {
+    border-color: #5B352C;
+    box-shadow: inset 0 1px 1px #5B352C;
+}
+
+
+/* 取消autofill的顏色 */
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #3B3B3B;
+    -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* 以下為toggleBotton */
+
+.switch {
+    position: relative;
+    top:6px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider.round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+    width: 60px;
+    height: 26px;
+    width: 65px;
+}
+
+.slider.round:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 31px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+}
+
+input:checked+.slider {
+    background-color: #DB7243;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #DB7243;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* 用於整體文字對齊 */
+
+
+.IsEnalbe{
+    padding-right:115px;
+}
+
+

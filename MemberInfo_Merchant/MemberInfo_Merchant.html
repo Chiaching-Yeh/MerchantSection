@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>廠商專區</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/Customize.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="#" />
+    <script data-search-pseudo-elements defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
+        crossorigin="anonymous"></script>
+
+
+    <!-- google Noto Sans TC 字型 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+
+    <!-- 載入Bootstrap相關JS (若套用最新版boostrap css會跑版) -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- 載入自訂Css -->
+    <link href="./css/Customize.css" rel="stylesheet">
+
+    <!-- 載入自訂js -->
+    <script src="./js/Customize.js"></script>
+
+
+</head>
+
+<body>
+    <div id="layoutDefault">
+        <div id="layoutDefault_content ">
+            <main>
+                <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
+                    <!-- 若要讓navBar定在最上方要加navbar sticky-top -->
+                    <div class="container" id="navbarcontainer">
+                        <a class="navbar-brand text-primary" href="#">Mass Food!</a><button class="navbar-toggler"
+                            type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto mr-lg-5">
+                                <li class="nav-item"><a class="nav-link" id="nav-link" href="#">美食專區</a></li>
+                                <li class="nav-item dropdown dropdown-lg no-caret">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        style="font-size:1.15em; ;">廠商專區</a>
+                                    <i class="dropdown-arrow"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right animated--fade-in-up"
+                                        aria-labelledby="navbarDropdownPages">
+                                        <div class=" row no-gutters">
+                                            <div class="col-lg-6 p-lg-5">
+                                                <h6 class="dropdown-header text-primary">商家資訊</h6>
+                                                <a class="dropdown-item" href="#">會員資料修改</a>
+                                                <a class="dropdown-item" href="#">營業資訊</a>
+                                                <div class="dropdown-divider border-0"></div>
+                                                <h6 class="dropdown-header text-primary">刊登商品</h6>
+                                                <a class="dropdown-item" href="#">商品增修</a>
+                                                <div class="dropdown-divider border-0"></div>
+                                                <h6 class="dropdown-header text-primary">訂單管理</h6>
+                                                <a class="dropdown-item" href="#">今日訂單</a>
+                                                <a class="dropdown-item" href="#">歷史訂單</a>
+                                                <div class="dropdown-divider border-0"></div>
+                                            </div>
+                                            <div class="col-lg-6 p-lg-5">
+                                                <h6 class="dropdown-header text-primary">報表查詢</h6>
+                                                <a class="dropdown-item" href="#">營收報表</a>
+                                                <div class="dropdown-divider border-0"></div>
+                                                <h6 class="dropdown-header text-primary">評論回覆</h6>
+                                                <a class="dropdown-item" href="#">評論回覆</a>
+                                                <div class="dropdown-divider border-0"></div>
+                                                <h6 class="dropdown-header text-primary">申訴聊天室</h6>
+                                                <a class="dropdown-item" href="#">聯絡客服</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="btn-primary btn rounded-pill px-4 ml-lg-4" href="#">登出<i
+                                    class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- header中店家圖片 -->
+                <header class="page-header page-header-dark bg-img-cover overlay overlay-60"
+                    style="background-image: url(https://source.unsplash.com/xZgvBXDB9wE/1600x900);">
+                    <div class="page-header-content">
+                        <div class="container text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h1 class="page-header-title mb-3 text-light">廠商專區</h1>
+                                    <p class="page-header-text mb-0">Browse posts in the category 'UI'</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="container" id="AsideAndMain">
+                    <div class="row align-items-start">
+                        <div class="col-lg-2" id="aside">
+                            <ul class="cart">
+                                <li>
+                                    <a href="#">商家資訊</a>
+                                    <ul>
+                                        <li><a href="#">會員資料修改</a></li>
+                                        <li><a href="#">營業資訊</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">刊登商品</a>
+                                    <ul>
+                                        <li><a href="#">商品增修</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">訂單管理</a>
+                                    <ul>
+                                        <li><a href="#">今日訂單</a></li>
+                                        <li><a href="#">歷史訂單</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">報表查詢</a>
+                                    <ul>
+                                        <li><a href="#">營收報表</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">評論回覆</a>
+                                    <ul>
+                                        <li><a href="#">評論回覆</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">申訴聊天室</a>
+                                    <ul>
+                                        <li><a href="#">聯絡客服</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-10" id="main">
+                            <div class=MainTitle>
+                                <p>會員資料修改</p>
+                            </div>
+                            <div class="infoSection">
+                                <form id="couriorinfo">
+                                    <div class="infoItem">
+                                        <label for="AccountNumber" class="form-label">廠商編號：</label>
+                                        <input class="form-control" type="text" placeholder="Default input readonly"
+                                            aria-label="default input example" readonly name="AccountNumber"><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="Name" class="form-label">廠商名稱：</label>
+                                        <input class="form-control" type="text" placeholder="Default input"
+                                            aria-label="default input example" id="Name" name="Name"><br><br>
+                                    </div>
+
+
+                                    <div class="infoItem">
+                                        <label for="IdentityNumber" class="form-label">統一編號：</label>
+                                        <input class="form-control" type="text" placeholder="Default input"
+                                            aria-label="default input example" id="IdentityNumber"
+                                            name="IdentityNumber"><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="ContactPersonName" class="form-label">聯絡人姓名：</label>
+                                        <input type="text" class="form-control" id="ContactPersonName"
+                                        placeholder="Default input" id="ContactPersonName"
+                                            name="ContactPersonName"><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="ContactPersonEmail" class="form-label">聯絡人信箱：</label>
+                                        <input type="email" class="form-control" id="ContactPersonEmail"
+                                            placeholder="name@example.com" id="Email" name="ContactPersonEmail"><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="ContactPersonIdentityNumber" class="form-label">身分證字號：</label>
+                                        <input class="form-control" type="text" placeholder="Default input"
+                                            aria-label="default input example" id="ContactPersonIdentityNumber"
+                                            name="ContactPersonIdentityNumber" pattern=""><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="Password" class="form-label">密碼：</label>
+                                        <input type="password" class="form-control" id="Password"
+                                            name="Password"><br><br>
+                                    </div>
+
+
+                                    <div class="infoItem">
+                                        <div class="BankCodeSection">
+                                            <label for="CredCardNumber">銀行代號：</label>
+                                            <select class="form-select" aria-label="Default select example"
+                                                name="BankCode">
+                                                <option selected>-- Select --</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <div class="BankAccountdNumber">
+                                            <label for="CredCardNumber">銀行帳號：</label>
+                                            <input type="text" class="form-control" placeholder="CardNum"
+                                                aria-label="default input example" id="ccFormatMonitor" maxlength='19'
+                                                name="BankAccount">
+                                        </div>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <div class="BankAccountName">
+                                            <label for="BankAccountName">戶名：</label>
+                                            <input type="text" class="form-control" placeholder="Default input"
+                                                aria-label="default input example" id="BankAccountNamer"
+                                                name="BankAccountName">
+                                        </div>
+                                    </div>
+
+                                    <div class="infoItem LastUpdateAccountNumber">
+                                        <label for="LastUpdateAccountNumber" class="form-label">前修改人編號：</label>
+                                        <input class="form-control" type="text" placeholder="Default input readonly"
+                                            aria-label="default input example" id="LastUpdateAccountNumber"
+                                            name="LastUpdateAccountNumber" readonly><br><br>
+                                    </div>
+
+                                    <div class="infoItem LastUpdateDatetime">
+                                        <label for="LastUpdateDatetime" class="form-label">前修改時間：</label>
+                                        <input class="form-control" type="text" placeholder="Default input readonly"
+                                            aria-label="default input example" id="LastUpdateDatetime"
+                                            name="LLastUpdateDatetime" readonly><br><br>
+                                    </div>
+
+                                    <div class="infoItem infoItemstatus">
+                                        <label for="Status" class="form-label">狀態：</label>
+                                        <input class="form-control" type="text" placeholder="Default input readonly"
+                                            aria-label="default input example" id="Status" name="Status"
+                                            readonly><br><br>
+                                    </div>
+
+                                    <div class="infoItem IsEnalbe">
+                                        <label for="IsEnalbe" class="form-label">營業資訊上架：</label>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label><br><br>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <div class="submitBtnInCouriorinfo">
+                                            <input type="submit" class="submitBtn" value="儲存修改">
+                                        </div><br><br>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+        </main>
+    </div>
+    <div id="layoutDefault_footer">
+        <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
+            <div class="container">
+                <div class="row">
+                    <span id="contactService">
+                        <a class="col-md-12">聯絡客服</a>
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="color: #DFDFDF;">&copy; 2021 All Rights Reserved. 版權所有 不得轉載</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <!-- 載入套版JS navBar -->
+    <!-- 4.3.1/js/bootstrap.bundle.min.js fisrt,, then script.js  -->
+    <!-- <script src="./js/scripts.js"></script> -->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/scripts.js"></script>
+
+
+
+</body>
+
+</html>

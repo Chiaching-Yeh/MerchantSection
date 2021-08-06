@@ -1,0 +1,450 @@
+@media only screen and (max-width: 1200px) {
+    .a {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .b {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-brand p {
+    margin: 0px;
+    padding-left: 40px;
+}
+
+.navbar-brand p:hover {
+    color: #DB7243;
+}
+
+
+nav ul {
+    padding-right: 40px;
+}
+
+nav ul li a {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+nav ul li a:hover {
+    color: #5B352C !important;
+}
+
+.a {
+    display: flex; 
+    justify-content: center;
+    margin-top: 100px !important;
+    margin: 20px;
+    vertical-align: top;
+    font-size: 18px;
+}
+
+.b {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 100px !important;
+    margin: 20px;
+    vertical-align: top;
+    font-size: 18px;
+}
+
+.-none {
+    display: none;
+} 
+
+/* 取消autoFill顏色 */
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #3B3B3B;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* focus改顏色 */
+
+.form-control:focus {
+    border-color: #5B352C;
+    box-shadow: inset 0 1px 1px #5B352C;
+}
+
+.form-select{
+    font-size: 18px;
+}
+
+.ReForm label {
+    width: 140px;
+    text-align: right !important;
+    margin-bottom: 0rem !important;
+}
+
+.ReForm input {
+    display: inline;
+    width: 250px;
+}
+
+.ReFormOutline {
+    width: 500px;
+    height: 980px;
+    padding: 40px;
+    border: #3B3B3B 1px solid;
+    border-radius: 50px;
+    margin: 0px 0px 10px auto;
+}
+
+.ReFormOutline>p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #DB7243;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.ReFormOutline label {
+    height: 60px;
+    text-align: right;
+}
+
+
+.ReForm label {
+    position: relative !important;
+    right: 10px;
+}
+
+.AddressSection, .BankCodeSection {
+    display: flex !important;
+}
+
+.BankCodeSection select {
+    position: relative;
+    left: 4px !important;
+} 
+
+.ReForm #BankCode {
+    width:252px;
+    height: 38px;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+
+/* 地址區塊 */
+
+/* .AddressSection{
+    display: inline-block;
+} */
+
+
+
+.AddressInputSelect{
+    padding-left: 0px;
+    list-style: none;
+    flex-direction: column;
+    position: relative;
+    left: 3px;
+    font-size: 12px !important;
+    margin-bottom: 28px;
+}
+
+.zipCityAdminArea{
+    display: flex;
+    
+}
+
+.restAddress{
+    display: block;
+}
+
+
+#zipcode{
+    text-align: center;
+    width: 80px;    
+    font-size: 12px !important;
+}
+
+#City{
+    width:80px;
+    font-size: 15px !important;
+    box-shadow:none;
+    border: 1px solid #ced4da;
+}
+
+#AdminArea{
+    width: 90px;
+    font-size: 15px !important;
+    box-shadow:none;
+    border: 1px solid #ced4da;
+}
+
+#Address{
+    margin-top: 5px;
+    margin-bottom: px;
+}
+
+
+/* 按鈕區 */
+
+.formItem{
+    display: flex;
+    justify-content: center;
+}
+
+/* 資料重置 */
+.ResetBtnInReForm{
+    margin-right: 10px;
+    padding-top:15px;
+}
+
+.ResetBtnInReForm input {
+    width: 150px;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    color: #3B3B3B;
+    background-color:#DFDFDF;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.ResetBtnInReForm input:hover {
+    background-color: #b1aba9;
+}
+
+.ResetBtnInReForm input:active {
+    transform: translateY(4px);
+}
+
+
+/* 讓送出按鈕置中 */
+.submitBtnInReForm{
+    display: flex;
+    justify-content: center;
+    padding-top:15px;
+}
+
+.submitBtnInReForm input {
+    width: 150px;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color: #DB7243;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.submitBtnInReForm input:hover {
+    background-color: #d3835e;
+}
+
+.submitBtnInReForm input:active {
+    transform: translateY(4px);
+}
+
+
+.LoginBtnOutline {
+    display: flex;
+    width: 500px;
+    height: 980px;
+    padding: 40px;
+    border: #3B3B3B 1px solid;
+    border-radius: 50px;
+    margin: auto 0 0 0px;
+}
+
+.LoginBtn{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.LoginBtn input {
+    background-color: #DB7243;
+    color: white;
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.LoginBtn input:hover {
+    background-color: #d3835e;
+}
+
+.LoginBtn input:active {
+    transform: translateY(4px);
+}
+
+.RebtnOutline {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 700px;
+    padding: 40px;
+    border: #3B3B3B 1px solid;
+    border-radius: 50px;
+    margin: 0px 0px 0px auto;
+}
+
+.ReBtn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 140px;
+
+}
+
+.ReBtn input {
+    background-color: #DB7243;
+    color: white;
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.ReBtn input:hover {
+    background-color: #d3835e;
+}
+
+.ReBtn input:active {
+    transform: translateY(4px);
+}
+
+.welcomeText{
+    color:#5B352C;
+    font-weight:bold; 
+    text-align: center;
+    align-items: end;
+    position: relative;
+    top:150px
+}
+
+.LoginFormOutline {
+    width: 500px;
+    height: 700px;
+    padding: 40px;
+    border: #3B3B3B 1px solid;
+    border-radius: 50px;
+    margin: auto 0 10px 0px;
+    
+}
+
+.LoginFormOutline p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #DB7243;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.LoginForm {
+    padding: 100px;
+    position: relative;
+}
+
+.LoginForm label {
+    display: inline !important;
+}
+
+.LoginForm input {
+    display: inline !important;
+}
+
+.LoginForm #Email, #Password {
+    width: 250px;
+}
+
+.submitAndforgetPwdBtn input {
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #DB7243;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.submitBtn input:hover {
+    background-color: #d3835e;
+}
+
+.submitBtn input:active {
+    transform: translateY(4px);
+}
+
+.forgetPwdBtn input:hover {
+    background-color: #d3835e;
+}
+
+.forgetPwdBtn input:active {
+    transform: translateY(4px);
+}
+
+.remPwd {
+    margin-bottom: 20px;
+    color: #5B352C !important;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #3B3B3B;
+    font-size: 18px;
+}
+
+footer .contact {
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+footer a {
+
+    width: 100px;
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+    padding: 5px;
+    color: #5B352C;
+    background-color: #DFDFDF;
+    border-radius: 40px;
+    margin: auto;
+}
+
+footer p {
+    font-size: 18px;
+    color: #DFDFDF;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
