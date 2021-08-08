@@ -156,7 +156,7 @@ input:-webkit-autofill {
 
 
 .AddressInputSelect{
-    padding-left: 0px;
+    padding-left: 2px;
     list-style: none;
     flex-direction: column;
     position: relative;
@@ -176,28 +176,21 @@ input:-webkit-autofill {
 
 
 #zipcode{
-    text-align: center;
-    width: 80px;    
-    font-size: 12px !important;
+    margin-left: 5px;
+    width: 125px;
+    box-shadow:none;
+    border: 1px solid #ced4da;
 }
 
 #City{
-    width:80px;
-    font-size: 15px !important;
+    width:120px;
     box-shadow:none;
     border: 1px solid #ced4da;
 }
 
-#AdminArea{
-    width: 90px;
-    font-size: 15px !important;
-    box-shadow:none;
-    border: 1px solid #ced4da;
-}
 
-#Address{
+#address{
     margin-top: 5px;
-    margin-bottom: px;
 }
 
 

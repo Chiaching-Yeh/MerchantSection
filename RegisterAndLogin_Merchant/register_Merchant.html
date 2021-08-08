@@ -92,36 +92,51 @@
                                 <label for="Name" class="form-label" id="restaurantName">餐廳地址：</label>
                                 <ul class="AddressInputSelect">
                                     <div class="zipCityAdminArea">
-                                        <li>
-                                            <input class="form-control" type="text" placeholder="郵遞區號"
-                                                aria-label=".form-control-sm example" id="zipcode" name="ZipCode">
-                                        </li>
 
                                         <li>
                                             <select class="form-select form-select-sm"
                                                 aria-label=".form-select-sm example" id="City">
                                                 <option selected>城市</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
+                                                <option value="A">台北市</option>
+                                                <option value="C">基隆市</option>
+                                                <option value="B">新北市</option>
+                                                <!-- <option value="D">宜蘭</option>
+                                                <option value="E">基隆市</option>
+                                                <option value="F">基隆市</option>
+                                                <option value="G">基隆市</option>
+                                                <option value="H">基隆市</option>
+                                                <option value="I">基隆市</option>
+                                                <option value="J">基隆市</option>
+                                                <option value="K">基隆市</option>
+                                                <option value="L">基隆市</option>
+                                                <option value="M">基隆市</option>
+                                                <option value="N">基隆市</option>
+                                                <option value="O">基隆市</option>
+                                                <option value="P">基隆市</option>
+                                                <option value="Q">基隆市</option>
+                                                <option value="R">基隆市</option>
+                                                <option value="S">基隆市</option>
+                                                <option value="T">基隆市</option>
+                                                <option value="U">基隆市</option>
+                                                <option value="V">基隆市</option>
+                                                <option value="W">基隆市</option>
+                                                <option value="X">基隆市</option> -->
                                             </select>
                                         </li>
 
                                         <li>
                                             <select class="form-select form-select-sm"
-                                                aria-label=".form-select-sm example" id="AdminArea">
-                                                <option selected>行政區</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
+                                                aria-label=".form-select-sm example" id="zipcode" name="ZipCode">
+                                                <option selected>郵遞區號</option>
                                             </select>
                                         </li>
+
                                     </div>
 
                                     <div class="restAddress">
                                         <li>
                                             <input class="form-control" type="text" placeholder="Default input"
-                                                aria-label=".form-control-sm example" id="Address">
+                                                aria-label=".form-control-sm example" id="address" name="Address">
                                         </li>
                                     </div>
                                 </ul>
@@ -147,7 +162,8 @@
 
                             <label for="IdentityNumber" class="form-label">身分證字號：</label>
                             <input class="form-control" type="text" placeholder="Default input"
-                                aria-label="default input example" id="IdentityNumber" name="ContactPersonIdentityNumber" pattern="">
+                                aria-label="default input example" id="IdentityNumber"
+                                name="ContactPersonIdentityNumber" pattern="">
 
                             <div class="BankCodeSection">
                                 <label for="CredCardNumber">銀行代號：</label>
