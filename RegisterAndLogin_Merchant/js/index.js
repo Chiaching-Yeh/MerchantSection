@@ -1,6 +1,5 @@
 $(window).on("load", function () {
 
-
   // 按下登入按鈕跳置登入頁面
   $(".login").on("click", function () {
     let a = $(".a")
@@ -27,10 +26,13 @@ $(window).on("load", function () {
     }
   })
 
+
   // 按下重置鍵清除所有資料
   $(".ResetBtn").on("click", function () {
-    $(".ReForm input select").clear();
+    $(".ReForm input").clear();
+
   })
+
 
   // 餐廳地址對應
 
@@ -131,13 +133,15 @@ $(window).on("load", function () {
     zipcode.on("change", function () {
       var adminArea = $("#zipcode :selected").text();
       if (adminArea != " ") {
-        $("#address").attr("value",  citySlected+adminArea);
+        $("#address").attr("value", citySlected + adminArea);
         $("#address").attr("value");
-      }
-    })
-
+      } if ($("#address").attr("value").match("undefined")) {
+      alert("請務必輸入餐廳所在正確位置")
+    }
 
   })
+
+})
 
 
 

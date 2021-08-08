@@ -183,9 +183,9 @@ body {
     height:45px;
     font-size: 18px;
     border: 1px solid #ced4da;
-    overflow: scroll;
     border-radius: 0.35rem;
 }
+
 
 .BankCodeSection select:focus {
     border-color: #5B352C;

@@ -35,6 +35,7 @@
     <!-- 載入自訂js -->
     <script src="./js/Customize.js"></script>
 
+ 
 
 </head>
 
@@ -209,9 +210,9 @@
 
                                     <div class="infoItem">
                                         <div class="BankCodeSection">
-                                            <label for="CredCardNumber">銀行代號：</label>
-                                            <select class="form-select" aria-label="Default select example"
-                                                name="BankCode">
+                                            <label for="BankCodeSection">銀行代號：</label>
+                                            <select class="form-select selectpicker" aria-label="Default select example"
+                                                name="BankCode" >
                                                 <option selected>-- Select --</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -257,6 +258,13 @@
                                                 aria-label="default input example" id="BankAccountNamer"
                                                 name="BankAccountName">
                                         </div>
+                                    </div>
+
+                                    <div class="infoItem">
+                                        <label for="EnrollmentDate" class="form-label">註冊日期：</label>
+                                        <input class="form-control" type="text" placeholder="Default input readonly"
+                                            aria-label="default input example" id="EnrollmentDate"
+                                            name="EnrollmentDate" readonly><br><br>
                                     </div>
 
                                     <div class="infoItem LastUpdateAccountNumber">

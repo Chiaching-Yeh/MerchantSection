@@ -19,8 +19,17 @@ jQuery(document).ready(function ($) {
     });
 
     // 營業資訊是否上架
-    $(".slider round").click(function (e){
-        console.log(e);
-    })
+    var switchStatus = false;
+    $(".IsEnalbe input").change(function (e) {
+        if ($(this).is(':checked')) {
+            switchStatus = $(this).is(':checked');
+            console.log(switchStatus);
+        }
+        else {
+            switchStatus = $(this).is(':checked');
+            console.log(switchStatus);
+        }
+    });
+
 
 });
