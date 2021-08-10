@@ -36,15 +36,15 @@ $(window).on("load", function () {
 
   // 餐廳地址對應
 
-  $("#City").on("change", function () {
-
+  $("#City").on("change", function (e) {
+    
     var cityName = $(this).val();
     var zipcode = $("#zipcode");
     var zipcodeOption = $("#zipcode option");
 
     if (cityName == "城市") {
-
       alert("請選擇餐廳所在的城市")
+      e.preventDeafult();
 
     } else {
 
@@ -129,19 +129,17 @@ $(window).on("load", function () {
       }
     }
 
-    // 地址對應Textinput
-    zipcode.on("change", function () {
+    // 餐廳地址對應Textinput
+    zipcode.on("change", function (e) {
       var adminArea = $("#zipcode :selected").text();
       if (adminArea != " ") {
         $("#address").attr("value", citySlected + adminArea);
         $("#address").attr("value");
-      } if ($("#address").attr("value").match("undefined")) {
-      alert("請務必輸入餐廳所在正確位置")
-    }
+      }
+
+    })
 
   })
-
-})
 
 
 
