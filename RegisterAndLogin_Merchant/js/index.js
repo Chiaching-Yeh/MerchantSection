@@ -11,6 +11,14 @@ $(window).on("load", function () {
       }
       b.removeClass("-none").fadeIn(500);
     }
+
+    // 返回頁面頂端
+    $("html,body").animate(
+      {
+        scrollTop: 0,
+      },
+      100
+    );
   })
 
   // 按下註冊按鈕跳置登入頁面
@@ -24,6 +32,14 @@ $(window).on("load", function () {
       }
       a.removeClass("-none").fadeIn(500);
     }
+
+    // 返回頁面頂端
+    $("html,body").animate(
+      {
+        scrollTop: 0,
+      },
+      100
+    );
   })
 
 
@@ -37,7 +53,7 @@ $(window).on("load", function () {
   // 餐廳地址對應
 
   $("#City").on("change", function (e) {
-    
+
     var cityName = $(this).val();
     var zipcode = $("#zipcode");
     var zipcodeOption = $("#zipcode option");
