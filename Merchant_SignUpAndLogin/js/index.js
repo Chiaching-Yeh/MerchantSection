@@ -45,7 +45,7 @@ $(window).on("load", function () {
 
   // 按下重置鍵清除所有資料
   $(".ResetBtn").on("click", function () {
-    $(".ReForm input").clear();
+    $(".ReForm input").empty();
 
   })
 
